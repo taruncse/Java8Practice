@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -58,7 +59,12 @@ public class Main {
         name.forEach(consumer1.andThen(consumer2));
         System.out.println("--------------");
         newName.forEach(consumer);*/
-        streamAndPredicat();
+
+
+
+        //streamAndPredicat();
+
+        flatMap();
     }
     interface Calculate{
         int sum (int a, int b);
@@ -71,12 +77,42 @@ public class Main {
         //Printing all values
         //stream.forEach(s -> System.out.println(s));
 
-        Predicate<String> predicate = s -> s.length()>3;
         Predicate<String> predicate1 = s -> s.contains("Two");
         Predicate<String> predicate2 = s -> s.contains("Three");
 
-        Consumer<String> consumer = s -> System.out.println(s);
+        //Consumer<String> consumer = s -> System.out.println(s);
 
-        stream.filter(predicate1.or(predicate2)).forEach(consumer);
+        //stream.filter(predicate1.or(predicate2)).forEach(consumer);
+
+        ///Intermediary operation using peek
+        List<String> newList = new ArrayList<>();
+        stream.peek(System.out::println)//Peek will return the statement as intermediary
+                .filter(predicate1.or(predicate2))
+                .forEach(newList::add);// final operation new list is created and print.
+    }
+
+    public static void flatMap(){
+        List<Integer> list1 = Arrays.asList(1,2,3,4,5);
+        List<Integer> list2 = Arrays.asList(3,4,5);
+        List<Integer> list3 = Arrays.asList(6,7,8,9);
+
+        List<List<Integer>> lists = Arrays.asList(list1,list2,list3);
+        System.out.print(lists);
+
+        Stream<List<Integer>> stream = lists.stream();
+
+        /*stream.map(l->l.size())
+                .forEach(System.out::println);*/
+
+        Function<List<?>,Integer> function = List::size;
+
+        Function<List<Integer>,Stream<Integer>> flatStream = l->l.stream();
+
+        /*stream.map(flatStream)
+                .forEach(System.out::println);*/
+        //we can use flat map instead of stream
+        stream.flatMap(flatStream)
+                .forEach(System.out::println);
+
     }
 }
