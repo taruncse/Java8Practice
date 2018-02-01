@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class Main {
@@ -63,9 +64,19 @@ public class Main {
         int sum (int a, int b);
     }
 
-    void streamAndPredicat(){
+    static void streamAndPredicat(){
 
-        Stream<String> stream = Stream.of("First","Second","Third","Fourth","Fifth");
+        Stream<String> stream = Stream.of("One","Two","Three","Four","Five");
 
+        //Printing all values
+        //stream.forEach(s -> System.out.println(s));
+
+        Predicate<String> predicate = s -> s.length()>3;
+        Predicate<String> predicate1 = s -> s.contains("Two");
+        Predicate<String> predicate2 = s -> s.contains("Three");
+
+        Consumer<String> consumer = s -> System.out.println(s);
+
+        stream.filter(predicate1.or(predicate2)).forEach(consumer);
     }
 }
