@@ -1,11 +1,9 @@
 package com.tkb.algorithm;
 
+import com.tkb.algorithm.stream.StreamProcessor;
 import sun.plugin.javascript.navig.Array;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -64,7 +62,12 @@ public class Main {
 
         //streamAndPredicat();
 
-        flatMap();
+        //flatMap();
+
+       // reduction();
+
+        StreamProcessor sp = new StreamProcessor();
+        sp.process();
     }
     interface Calculate{
         int sum (int a, int b);
@@ -114,5 +117,14 @@ public class Main {
         stream.flatMap(flatStream)
                 .forEach(System.out::println);
 
+    }
+
+    public static void reduction(){
+        // (i1,i2)-> i1+2 is same as Integer::sum
+        List<Integer>list = Arrays.asList(10,10,12);
+
+        Integer red = list.stream().reduce(0,Integer::sum);
+        Optional red2 = list.stream().reduce(Integer::max);
+        System.out.println(red2);
     }
 }
