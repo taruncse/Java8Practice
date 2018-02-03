@@ -1,18 +1,18 @@
-package com.tkb.algorithm.stream;
+package com.tkb.algorithm;
 
 public class Student {
     String name;
     int roll;
 
-    Student(String name, int roll){
+    public Student(String name, int roll){
         this.name = name;
         this.roll = roll;
     }
-    String getName(){
+    public String getName(){
         return name;
     }
 
-    int getRoll(){
+    public int getRoll(){
         return roll;
     }
 

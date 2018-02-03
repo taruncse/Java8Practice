@@ -1,9 +1,8 @@
 package com.tkb.algorithm.stream;
 
-import org.w3c.dom.css.Counter;
+import com.tkb.algorithm.Student;
 
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -46,6 +45,30 @@ public class StreamProcessor {
         );
         System.out.println(shortedStudentCount);
 
+
+        Map<Integer,List<String>> shortedStudentName =
+                studentList.stream().collect(
+                        Collectors.groupingBy(
+                                p->p.getRoll(), Collectors.mapping(Student::getName,Collectors.toList())
+                        )
+                );
+        System.out.println(shortedStudentName);
+
+        Map<Integer,Set<String>> shortedStudentSet =
+                studentList.stream().collect(
+                        Collectors.groupingBy(
+                                p->p.getRoll(), Collectors.mapping(Student::getName,Collectors.toCollection(TreeSet::new))
+                        )
+                );
+        System.out.println(shortedStudentSet);
+
+        Map<Integer,String> shortedStudentJoinString=
+                studentList.stream().collect(
+                        Collectors.groupingBy(
+                                p->p.getRoll(), Collectors.mapping(Student::getName,Collectors.joining(","))
+                        )
+                );
+        System.out.println(shortedStudentJoinString);
     }
 
 

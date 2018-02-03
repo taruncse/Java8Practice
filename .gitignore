@@ -1,2 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
+.idea/uiDesigner.xml
+out/production/Java8Practice/com/tkb/algorithm/stream/
