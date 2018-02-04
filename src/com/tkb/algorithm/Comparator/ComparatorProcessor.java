@@ -19,4 +19,7 @@ public class ComparatorProcessor {
 
     Comparator<Student> com = compStudentRoll.thenComparing(comparatorName);
 
+    Comparator<Student>comparator = Comparator.comparing(Student::getName)
+            .thenComparing(Student::getRoll);
+
 }
