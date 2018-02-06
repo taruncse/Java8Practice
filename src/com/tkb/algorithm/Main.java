@@ -1,6 +1,9 @@
 package com.tkb.algorithm;
 
 import com.tkb.algorithm.stream.StreamProcessor;
+import com.tkb.algorithm.virtualMethodInvocation.Animal;
+import com.tkb.algorithm.virtualMethodInvocation.Cow;
+import com.tkb.algorithm.virtualMethodInvocation.Dog;
 import sun.plugin.javascript.navig.Array;
 
 import java.util.*;
@@ -66,8 +69,21 @@ public class Main {
 
        // reduction();
 
-        StreamProcessor sp = new StreamProcessor();
-        sp.process();
+        /*StreamProcessor sp = new StreamProcessor();
+        sp.process();*/
+
+        Animal animal = new Cow();
+        animal.feed();
+        Animal animal1 = new Dog();
+        animal1.feed();
+        System.out.println(animal.name);
+
+        Dog dog = new Dog();
+        System.out.println(dog.name);
+
+        Cow cow = new Cow();
+        System.out.println(cow.name);
+
     }
     interface Calculate{
         int sum (int a, int b);
