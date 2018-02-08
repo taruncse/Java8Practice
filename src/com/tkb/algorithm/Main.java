@@ -1,5 +1,6 @@
 package com.tkb.algorithm;
 
+import com.tkb.algorithm.advanceEnum.AbstructEnum;
 import com.tkb.algorithm.advanceEnum.EnumHelper;
 import com.tkb.algorithm.stream.StreamProcessor;
 import com.tkb.algorithm.virtualMethodInvocation.Animal;
@@ -17,9 +18,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EnumHelper.printEnum();
-
-
+        /*EnumHelper.printEnum();
+        EnumHelper.onlyOnce();
+        EnumHelper.abstractEnum();*/
 	// write your code here
 
         /*Calculate calculate = new Calculate() {

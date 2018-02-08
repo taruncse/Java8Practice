@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be1b3669-a977-4e03-8daf-3f86506827e2" name="Default" comment="Finishing Comparator Work.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/EnumHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java" />
+    <list default="true" id="be1b3669-a977-4e03-8daf-3f86506827e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/AbstructEnum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java8Practice/com/tkb/algorithm/Main.class" afterPath="$PROJECT_DIR$/out/production/Java8Practice/com/tkb/algorithm/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tkb/algorithm/Main.java" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Animal.java" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Animal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Dog.java" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Dog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/EnumHelper.java" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/EnumHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java" afterPath="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="169">
+              <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,16 +31,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Seasons.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Seasons.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="114">
+              <caret line="6" column="88" lean-forward="false" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
               <folding>
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstructEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/AbstructEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,24 +64,13 @@
       <file leaf-file-name="EnumHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/EnumHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="183">
+              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="e#100#101#0" expanded="true" />
                 <element signature="e#153#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-              <folding>
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,9 +184,10 @@
         <option value="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Cow.java" />
         <option value="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Dog.java" />
         <option value="$PROJECT_DIR$/src/com/tkb/algorithm/virtualMethodInvocation/Animal.java" />
+        <option value="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java" />
+        <option value="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/AbstructEnum.java" />
         <option value="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/EnumHelper.java" />
         <option value="$PROJECT_DIR$/src/com/tkb/algorithm/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java" />
       </list>
     </option>
   </component>
@@ -349,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517721469592</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Enum Example">
+      <created>1518113554190</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518113554190</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -393,7 +404,8 @@
     <MESSAGE value="Stream Processing" />
     <MESSAGE value="add custom comparater with example" />
     <MESSAGE value="Finishing Comparator Work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishing Comparator Work." />
+    <MESSAGE value="Added Enum Example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Enum Example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -597,36 +609,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="114">
+          <caret line="6" column="88" lean-forward="false" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/EnumHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="183">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="e#100#101#0" expanded="true" />
             <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/Seasons.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/advanceEnum/AbstructEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
