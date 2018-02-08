@@ -1,5 +1,6 @@
 package com.tkb.algorithm;
 
+import com.tkb.algorithm.advanceEnum.EnumHelper;
 import com.tkb.algorithm.stream.StreamProcessor;
 import com.tkb.algorithm.virtualMethodInvocation.Animal;
 import com.tkb.algorithm.virtualMethodInvocation.Cow;
@@ -15,6 +16,10 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
+
+        EnumHelper.printEnum();
+
+
 	// write your code here
 
         /*Calculate calculate = new Calculate() {
@@ -72,17 +77,23 @@ public class Main {
         /*StreamProcessor sp = new StreamProcessor();
         sp.process();*/
 
-        Animal animal = new Cow();
+        /*Animal animal = new Cow();
         animal.feed();
+        animal.play();
+
         Animal animal1 = new Dog();
         animal1.feed();
+        animal1.play();
+
         System.out.println(animal.name);
 
+
         Dog dog = new Dog();
+        dog.play();
         System.out.println(dog.name);
 
         Cow cow = new Cow();
-        System.out.println(cow.name);
+        System.out.println(cow.name);*/
 
     }
     interface Calculate{
