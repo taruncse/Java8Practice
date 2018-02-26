@@ -2,6 +2,8 @@ package com.tkb.algorithm;
 
 import com.tkb.algorithm.advanceEnum.AbstructEnum;
 import com.tkb.algorithm.advanceEnum.EnumHelper;
+import com.tkb.algorithm.lamda.Filter;
+import com.tkb.algorithm.lamda.FilterAnimal;
 import com.tkb.algorithm.stream.StreamProcessor;
 import com.tkb.algorithm.virtualMethodInvocation.Animal;
 import com.tkb.algorithm.virtualMethodInvocation.Cow;
@@ -17,6 +19,18 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
+
+        com.tkb.algorithm.lamda.Animal animal = new com.tkb.algorithm.lamda.Animal("Kangaroo",true,false);
+        Filter filter = new Filter() {
+            @Override
+            public boolean Test(com.tkb.algorithm.lamda.Animal animal) {
+                return animal.canHop();
+            }
+        };
+
+        FilterAnimal filterAnimal = new FilterAnimal();
+        System.out.println(filterAnimal.doFilter(animal,filter));
+
 
         /*EnumHelper.printEnum();
         EnumHelper.onlyOnce();
