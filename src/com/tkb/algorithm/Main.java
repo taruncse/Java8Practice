@@ -14,12 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         com.tkb.algorithm.lamda.example1.Animal animal = new com.tkb.algorithm.lamda.example1.Animal("Kangaroo",true,false);
-        Filter filter = new Filter() {
-            @Override
-            public boolean Test(com.tkb.algorithm.lamda.example1.Animal animal) {
-                return animal.canHop();
-            }
-        };
+        Filter filter = animal1 -> animal1.canHop();
 
         FilterAnimal filterAnimal = new FilterAnimal();
         System.out.println(filterAnimal.doFilter(animal,filter));
