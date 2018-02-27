@@ -1,4 +1,4 @@
-package com.tkb.algorithm.lamda;
+package com.tkb.algorithm.lamda.example1;
 
 public class FilterAnimal {
 

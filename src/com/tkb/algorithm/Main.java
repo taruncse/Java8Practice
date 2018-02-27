@@ -1,17 +1,10 @@
 package com.tkb.algorithm;
 
-import com.tkb.algorithm.advanceEnum.AbstructEnum;
-import com.tkb.algorithm.advanceEnum.EnumHelper;
-import com.tkb.algorithm.lamda.Filter;
-import com.tkb.algorithm.lamda.FilterAnimal;
-import com.tkb.algorithm.stream.StreamProcessor;
-import com.tkb.algorithm.virtualMethodInvocation.Animal;
-import com.tkb.algorithm.virtualMethodInvocation.Cow;
-import com.tkb.algorithm.virtualMethodInvocation.Dog;
-import sun.plugin.javascript.navig.Array;
+import com.tkb.algorithm.lamda.example1.Filter;
+import com.tkb.algorithm.lamda.example1.FilterAnimal;
+import com.tkb.algorithm.lamda.example2.FilterPredicate;
 
 import java.util.*;
-import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
@@ -20,10 +13,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        com.tkb.algorithm.lamda.Animal animal = new com.tkb.algorithm.lamda.Animal("Kangaroo",true,false);
+        com.tkb.algorithm.lamda.example1.Animal animal = new com.tkb.algorithm.lamda.example1.Animal("Kangaroo",true,false);
         Filter filter = new Filter() {
             @Override
-            public boolean Test(com.tkb.algorithm.lamda.Animal animal) {
+            public boolean Test(com.tkb.algorithm.lamda.example1.Animal animal) {
                 return animal.canHop();
             }
         };
@@ -31,6 +24,9 @@ public class Main {
         FilterAnimal filterAnimal = new FilterAnimal();
         System.out.println(filterAnimal.doFilter(animal,filter));
 
+
+        Predicate predicate = filter2 -> animal.canHop();
+        FilterPredicate.FilterAnimal(animal,predicate);
 
         /*EnumHelper.printEnum();
         EnumHelper.onlyOnce();
