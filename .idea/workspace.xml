@@ -18,8 +18,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="160">
+              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -325,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519753360606</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Replace with lamda">
+      <created>1519758528727</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519758528727</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -373,7 +380,8 @@
     <MESSAGE value="Added Anonymus class" />
     <MESSAGE value="Added Lamda example" />
     <MESSAGE value="Lamda with Predicate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lamda with Predicate" />
+    <MESSAGE value="Replace with lamda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace with lamda" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -875,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tkb/algorithm/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="160">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

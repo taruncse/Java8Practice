@@ -13,6 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+        Lamda Expression
         com.tkb.algorithm.lamda.example1.Animal animal = new com.tkb.algorithm.lamda.example1.Animal("Kangaroo",true,false);
         Filter filter = animal1 -> animal1.canHop();
 
@@ -21,7 +23,7 @@ public class Main {
 
 
         Predicate predicate = filter2 -> animal.canHop();
-        FilterPredicate.FilterAnimal(animal,predicate);
+        FilterPredicate.FilterAnimal(animal,predicate);*/
 
         /*EnumHelper.printEnum();
         EnumHelper.onlyOnce();
